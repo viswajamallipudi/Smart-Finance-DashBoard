@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f4f6f9;
+}
+
+.dashboard {
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 200px;
+  background: #111827;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+}
+
+/* Main */
+.main {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  flex: 1;
+  background: rgb(104, 90, 90);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Chart */
+.chart-box {
+  margin-top: 30px;
+  background: rgba(235, 237, 234, 0.671);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Transactions */
+.transactions {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.transactions li {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
+.dark {
+  background: #111827;
+  color: white;
+}
+
+.dark .card,
+.dark .chart-box,
+.dark .transactions {
+  background: #1f2937;
+  color: white;
+}
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+}
